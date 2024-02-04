@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>How's the weather today?</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city"></h1>
+            <p class="current-details">
+              <span id="current-date"></span>,
+              <span id="current-description"> </span>
+              <br />
+              Humidity: <strong><span id="current-humidity"></span></strong>,
+              Wind: <strong><span id="current-wind"></span></strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <!-- icon -->
+            <div id="icon"></div>
+            <span
+              class="current-temperature-value"
+              id="current-temperature"
+            ></span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded with 💖 by
+          <a href="https://github.com/dianakagawa" target="_blank"
+            >Diana Nakagawa</a
+          >. <br />
+          You can find it on
+          <a href="https://github.com/dianakagawa/plus6" target="_blank"
+            >GitHub</a
+          >
+          and hosted on
+          <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
