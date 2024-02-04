@@ -1,10 +1,18 @@
 body {
-  background: #fff7f1;
+  background-color: #fff7f1;
   font-family: "Open Sans", sans-serif;
 }
 
 a {
-  color: #885df1;
+  color: #bed1cf;
+}
+
+a:hover {
+  color: #ffe4c9;
+}
+
+a:active {
+  color: #e78895;
 }
 
 .weather-app {
@@ -81,7 +89,7 @@ main {
 }
 
 .current-details strong {
-  color: #f65282;
+  color: #e78895;
 }
 
 .current-temperature-icon {
